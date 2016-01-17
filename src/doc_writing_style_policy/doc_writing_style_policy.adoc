@@ -50,6 +50,15 @@ Published on January 3, 2016.
 
 [[_style]]
 == Style
+
+=== Unicode
+The documentation for KiCad uses Unicode for character encoding. Therefore the correct
+use of the appropriate Unicode entities is encouraged.
+e.g. for ellipses don't use three single dots ('...') but use the correct 
+unicode ellipsis ('…'). The em-dash ('—') or en-dash ('–') are repesented in
+Unicode and not by using multiple hyphens ('-'). The same is true for Umlauts
+and other language specific characters.
+
 === Medium Dependend Styles
 * documentation for electronic display
 ** uses a sans serif font for better readability
@@ -80,7 +89,7 @@ Published on January 3, 2016.
 ** Third level headings are numbered with three numbers seperated by a period. The first number is the number of the chapter, the second number of the section and the third is the concecutive number of the subsection in that section.
 ** Third level headings are used to form subsections.
 ** Subsections may only exist if there is more than one subsection or it contains more than one sub-subsection.
-* *Forth and lower level headings* are set in a 12 pt bold font.
+* *Forth and higher level headings* are set in a 12 pt bold font.
 ** Forth level headings are numbered analog to the lower level headings numbering scheme.
 ** Forth level headings are used to form sub-subsections.
 ** Sub-subsections may only exist if there is more than one sub-subsection.
@@ -89,7 +98,7 @@ Published on January 3, 2016.
 == Quotes and Quotations
 * *Single quotes* (') are used for literal names of files and such (e.g. 'netlist.net' or '*.sch').
 * *Double quotes* (") are used for naming things that would literally look different (e.g. "n-dash" vs. '–' or "alpha" vs. 'α' or "netlist file" vs. 'netlist.net').
-* *Typographic quotes* (`` '') are used for inline quotations like ``These are not the diodes you're looking for.''.
+* *Typographic quotes* („“) are used for inline quotations like „These are not the diodes you're looking for.“.
 * *Block quotes* are used to quote larger amounts of text.
 ** Block quotes are indented with a padding left and right by 2em.
 ** Block quotes have a padding top and bottom of 12pt.
