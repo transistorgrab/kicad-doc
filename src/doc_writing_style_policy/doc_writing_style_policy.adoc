@@ -56,9 +56,13 @@ The documentation for KiCad is done in English.
 * The documentation for KiCad will be done in a formal way. Use the appropriate
   words to address the reader in a formal way, i.e. do not address the reader
   as you would address a friend but as you would address a business partner.
+  This is especially meant for translations as English mostly does not use such
+  distinction. (e.g. the English 'Click on X' translates in German either to
+  'Klicke auf X' when talking to a friend but to 'Klicken Sie auf X' when
+  talking to a stranger.)
 * Working instructions in tutorial passages are written like actual instructions
-  to the reader, i.e. „To close the window klick on the 'OK' button“
-  and not „Klicking on the 'OK' button will close the window.“.
+  to the reader, i.e. Use „To close the window click on the 'OK' button.“
+  but not „Clicking on the 'OK' button will close the window.“.
 
 
 [[_style]]
@@ -212,7 +216,84 @@ is used (e.g. '2.54' vs. '2,54').
 ** The body of the note is set below the note-title and left-indented by 3em.
 ** The note text is set in a italic style.
 ** Notes have a light grey background.
+** The space provided by the indentation shows a symbol according to the type
+   of note, i.e. `NOTE:`, `TIP:`, `IMPORTANT:`, `CAUTION:`, `WARNING:`. These
+   symbols are defined globally and shared between all documents.
 
 [[_structure]]
 == Structure
+=== Documentation Structure
+The KiCad documentation has a structure that provides information on a single
+place. Duplicate information in different documents is to be avoided and proper
+linking to the document containing the information is mandatory. I.e.:
+* There is one document that describes the common GUI elements and all other
+  documents point to that document. 
+* There is one document that describes how the component editor works and all
+  other documents link to that document.
 
+The whole documentation of KiCad follows the structure shown below whereas each
+individual document follows the structure given in <<_document_structure>>.
+* KiCad
+** This document gives general information about the software suite and
+   introduction of all software modules.
+** Description of the KiCad Manager
+** Description of the common GUI elements that are available in every individual
+   software module.
+* Getting Started
+** This document describes the basic usage and general workflow of all KiCad
+   modules to give the user an idea what can be accomplished using KiCad. For
+   all deeper information will be referenced to the individual Reference
+   Manuals.
+* Eeschema
+** This document describes the schematic capture module of KiCad.
+* LibEdit
+** This document describes the component editor an component library manager
+   module of KiCad.
+* Pcbnew
+** This document describes the PCB layout module of KiCad.
+* FootprintEditor
+** This document describes the footprint editor and footprint library manager
+   module of KiCad.
+* Gerbview
+** This document describes the Gerber file viewer module of KiCad.
+* Bitmap2component
+** This document describes the module of KiCad that generates footprints from
+   bitmaps.
+* Pcb Calculator
+** This document describes the module of KiCad that helps with calculations
+   related to PCB layout and such.
+* Pl Editor
+** This document describes the module of KiCad that helps setting up frame
+   references.
+
+[[_document_structure]]
+=== Document Structure
+
+The documentation (Reference Manual) for all modules of KiCad (Eeschema,
+Pcbnew, etc.) shares the same basic structure. This is to give the reader
+a better experience when searching for support.
+
+* Document title
+** Copyright information
+** Author(s) information
+** Feedback information
+** Date of creation
+* Chapter 1: Introduction
+** purpose of this document, what information will be found here
+** short description of the software module
+* Chapter 2: Installation and Setup
+** since all software modules will be installed by installing the main software
+   package there will be no installation information for the individual modules
+** Setup section describes how to set up default and project specifc values for
+   this module
+* Chapter 3: Basic Usage
+** This section describes all menu items and the use of all tools available in
+   individual tool bars. The description is done in a tutorial style following
+   a simple simple design workflow.
+* Chapter 4: Advanced Usage
+** This section describes all deeper nested menu settings and special tool
+   configurations needed for advanced designs (e.g. differential designs). Also
+   information regarding scripting and other advanced usage is to be found here.
+* Chapter 5: References (optional)
+** This section provides further references to (external) sources related to the
+   current topic, e.g. PCB layout guides or schematic style guides.
