@@ -63,6 +63,8 @@ The documentation for KiCad is done in English.
 * Working instructions in tutorial passages are written like actual instructions
   to the reader, i.e. Use „To close the window click on the 'OK' button.“
   but not „Clicking on the 'OK' button will close the window.“.
+* Use short sentences. Sentences that span several lines are hard to understand
+  and also hard to translate. 
 
 
 [[_style]]
