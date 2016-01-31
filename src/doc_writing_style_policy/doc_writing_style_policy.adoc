@@ -64,6 +64,14 @@ The documentation for KiCad is done in English.
   to the reader, i.e. Use „To close the window click on the 'OK' button.“
   but not „Clicking on the 'OK' button will close the window.“.
 
+=== Terminology
+
+This section collects all definitions for a uniform use of the same terms for
+naming things througout all documentation.
+* *Software suite*: This term describes KiCad as a whole including
+  all software modules.
+* *Software module*: This term describes each individual software, i.e.
+  Eeschema, Pcbnew, etc.
 
 [[_style]]
 == Style
